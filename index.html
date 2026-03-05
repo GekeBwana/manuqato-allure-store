@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="MANUQATO ALLURE — Futuristic fragrances, apparel & accessories." />
+    <title>MANUQATO ALLURE — Future Luxury</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Outfit:wght@300;400;500;600&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+
+    <!-- Toast Container -->
+    <div id="toastContainer" class="toast-container" aria-live="polite"></div>
+
+    <!-- Ambient Background -->
+    <div class="bg">
+      <div class="bg-orb orb-1"></div>
+      <div class="bg-orb orb-2"></div>
+      <div class="bg-orb orb-3"></div>
+      <div class="bg-grid"></div>
+      <div class="bg-noise"></div>
+    </div>
+
+    <!-- ==================== Header ==================== -->
+    <header class="header" id="header">
+      <div class="header-inner">
+
+        <a class="brand" href="#top" aria-label="Home">
+          <img src="Images/logo.jpg" alt="Manuqato Allure Logo" class="brand-logo" />
+          <div class="brand-text">
+            <div class="brand-name">MANUQATO</div>
+            <div class="brand-sub">ALLURE</div>
+          </div>
+        </a>
+
+        <nav class="nav">
+          <a href="#new" class="nav-link">New</a>
+          <a href="#shop" class="nav-link">Shop</a>
+          <a href="#story" class="nav-link">Story</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+          <button class="icon-btn" id="openSearch" aria-label="Search" title="Search">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+          </button>
+          <button class="icon-btn cart-btn" id="openCart" aria-label="Cart">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+            <span class="cart-badge" id="cartBadge" aria-label="0 items in cart">0</span>
+          </button>
+          <button class="btn-join" id="openNewsletter">Join VIP</button>
+        </div>
+
+        <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+
+      </div>
+
+      <!-- Mobile Nav -->
+      <div class="mobile-nav" id="mobileNav" aria-hidden="true">
+        <a href="#new" class="mob-link">New Arrivals</a>
+        <a href="#shop" class="mob-link">Shop All</a>
+        <a href="#story" class="mob-link">Our Story</a>
+        <a href="#contact" class="mob-link">Contact</a>
+        <button class="btn-primary full-w" id="openCartMobile">View Cart (<span id="mobileCartCount">0</span>)</button>
+      </div>
+    </header>
+
+    <main id="top">
+
+      <!-- ==================== Hero ==================== -->
+      <section class="hero">
+        <div class="hero-inner">
+
+          <div class="hero-copy">
+            <div class="hero-eyebrow">
+              <span class="dot-pulse"></span>
+              New Season Drop — Limited Quantities
+            </div>
+            <h1 class="hero-headline">
+              Luxury<br/>
+              <em>redefined</em><br/>
+              for tomorrow.
+            </h1>
+            <p class="hero-lead">
+              Fragrances, apparel and accessories crafted for those who move ahead of the curve.
+            </p>
+            <div class="hero-actions">
+              <a class="btn-primary" href="#shop">Explore Collection</a>
+              <button class="btn-ghost" id="scrollNew">New Arrivals →</button>
+            </div>
+            <div class="hero-stats">
+              <div class="stat">
+                <span class="stat-val">24–48h</span>
+                <span class="stat-lbl">Nairobi Dispatch</span>
+              </div>
+              <div class="stat-divider"></div>
+              <div class="stat">
+                <span class="stat-val">4.9★</span>
+                <span class="stat-lbl">Customer Rating</span>
+              </div>
+              <div class="stat-divider"></div>
+              <div class="stat">
+                <span class="stat-val">Premium</span>
+                <span class="stat-lbl">Packaging</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="hero-card-featured">
+              <div class="hcf-glow"></div>
+              <div class="hcf-badge">✦ Featured Drop</div>
+              <div class="hcf-orb">
+                <div class="orb-inner"></div>
+                <div class="orb-ring r1"></div>
+                <div class="orb-ring r2"></div>
+              </div>
+              <div class="hcf-name">AURA 01</div>
+              <div class="hcf-sub">Eau de Parfum · 50ml</div>
+              <div class="hcf-notes">
+                <span>Bergamot</span>
+                <span>Amber</span>
+                <span>Musk</span>
+              </div>
+              <div class="hcf-footer">
+                <div class="hcf-price">KSh 4,950</div>
+                <button class="btn-primary small" id="heroAddCart">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ==================== New Arrivals ==================== -->
+      <section class="section" id="new">
+        <div class="section-inner">
+          <div class="section-header">
+            <div class="section-eyebrow">Fresh In</div>
+            <h2 class="section-title">New Arrivals</h2>
+            <p class="section-sub">The latest drops — curated for the bold.</p>
+          </div>
+          <div class="arrivals-grid" id="newArrivals"></div>
+        </div>
+      </section>
+
+      <!-- ==================== Shop ==================== -->
+      <section class="section" id="shop">
+        <div class="section-inner">
+          <div class="section-header">
+            <div class="section-eyebrow">Catalogue</div>
+            <h2 class="section-title">Shop</h2>
+            <p class="section-sub">Filter by category. Find your signature.</p>
+          </div>
+
+          <div class="shop-controls">
+            <div class="filter-tabs" role="tablist">
+              <button class="filter-tab active" data-filter="all"       role="tab" aria-selected="true">All</button>
+              <button class="filter-tab"        data-filter="fragrance" role="tab" aria-selected="false">Fragrances</button>
+              <button class="filter-tab"        data-filter="apparel"   role="tab" aria-selected="false">Apparel</button>
+              <button class="filter-tab"        data-filter="accessory" role="tab" aria-selected="false">Accessories</button>
+            </div>
+            <div class="search-wrap" id="searchWrap">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+              <input id="searchInput" type="search" placeholder="Search products…" autocomplete="off" />
+              <button class="search-clear" id="searchClear" aria-label="Clear search">✕</button>
+            </div>
+          </div>
+
+          <div class="results-bar" id="resultsBar"></div>
+          <div class="product-grid" id="productGrid" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <!-- ==================== Story ==================== -->
+      <section class="section bg-story" id="story">
+        <div class="section-inner split-layout">
+          <div class="story-copy">
+            <div class="section-eyebrow">About</div>
+            <h2 class="section-title">Our Story</h2>
+            <p class="story-body">
+              MANUQATO ALLURE is built for those who refuse to choose between luxury and edge.
+              Every piece in our collection is selected for its quality, its aesthetic precision,
+              and the feeling it gives the person wearing it.
+            </p>
+            <ul class="story-list">
+              <li><span class="list-mark">✦</span> Intentional curation — every drop is deliberate.</li>
+              <li><span class="list-mark">✦</span> Futuristic aesthetic — neon, chrome, midnight hues.</li>
+              <li><span class="list-mark">✦</span> Fast checkout — WhatsApp or direct order.</li>
+            </ul>
+          </div>
+          <div class="story-stats-card">
+            <div class="ssc-grid">
+              <div class="ssc-kpi"><div class="kpi-val">4.9★</div><div class="kpi-lbl">Customer Rating</div></div>
+              <div class="ssc-kpi"><div class="kpi-val">1k+</div><div class="kpi-lbl">Monthly Visitors</div></div>
+              <div class="ssc-kpi"><div class="kpi-val">24h</div><div class="kpi-lbl">Avg. Dispatch</div></div>
+              <div class="ssc-kpi"><div class="kpi-val">100%</div><div class="kpi-lbl">Premium Packaging</div></div>
+            </div>
+            <div class="ssc-note">Nairobi-based · Ships Kenya-wide</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== Contact ==================== -->
+      <section class="section" id="contact">
+        <div class="section-inner split-layout">
+          <div>
+            <div class="section-eyebrow">Get In Touch</div>
+            <h2 class="section-title">Contact</h2>
+            <p class="story-body">Custom orders, bulk requests, or just want to know more — reach out.</p>
+
+            <div class="contact-list">
+              <a class="contact-item" id="whatsAppLink" href="#" target="_blank" rel="noreferrer">
+                <div class="ci-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.117.549 4.107 1.51 5.845L.057 23.485a.5.5 0 0 0 .6.6l5.64-1.453A11.944 11.944 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.885 0-3.65-.52-5.158-1.424l-.36-.215-3.735.962.982-3.732-.234-.375A9.96 9.96 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+                </div>
+                <div class="ci-body">
+                  <div class="ci-title">WhatsApp</div>
+                  <div class="ci-sub">Fastest response — usually within minutes</div>
+                </div>
+                <div class="ci-arrow">→</div>
+              </a>
+
+              <a class="contact-item" href="/cdn-cgi/l/email-protection#b4dcd1d8d8dbf4d9d5dac1c5d5c0dbd5d8d8c1c6d19ad7dbd9">
+                <div class="ci-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </div>
+                <div class="ci-body">
+                  <div class="ci-title">Email</div>
+                  <div class="ci-sub"><span class="__cf_email__" data-cfemail="e189848d8d8ea18c808f949080958e808d8d949384cf828e8c">[email&#160;protected]</span></div>
+                </div>
+                <div class="ci-arrow">→</div>
+              </a>
+
+              <div class="contact-item">
+                <div class="ci-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div class="ci-body">
+                  <div class="ci-title">Location</div>
+                  <div class="ci-sub">Nairobi, Kenya · Ships nationwide</div>
+                </div>
+                <div class="ci-arrow">✦</div>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-group-row">
+              <div class="form-group">
+                <label class="form-label" for="contactName">Name</label>
+                <input class="form-input" id="contactName" name="name" type="text" placeholder="Your name" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="contactPhone">Phone</label>
+                <input class="form-input" id="contactPhone" name="phone" type="tel" placeholder="0700 000 000" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="contactMsg">Message</label>
+              <textarea class="form-input" id="contactMsg" name="message" rows="5" placeholder="Tell us what you need…" required></textarea>
+            </div>
+            <button class="btn-primary full-w" type="submit">
+              Send via WhatsApp
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="margin-left:6px"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.117.549 4.107 1.51 5.845L.057 23.485a.5.5 0 0 0 .6.6l5.64-1.453A11.944 11.944 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.885 0-3.65-.52-5.158-1.424l-.36-.215-3.735.962.982-3.732-.234-.375A9.96 9.96 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-inner">
+          <div class="footer-brand">
+            <img src="Images/logo.jpg" alt="Manuqato Allure Logo" class="brand-logo footer-logo" />
+            <span class="footer-brand-name">MANUQATO ALLURE</span>
+          </div>
+          <p class="footer-copy">© <span id="year"></span> MANUQATO ALLURE · Nairobi, Kenya · Future Luxury</p>
+          <div class="footer-links">
+            <a href="#top">Top ↑</a>
+            <a href="#shop">Shop</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+      </footer>
+
+    </main>
+
+    <!-- ==================== Product Modal ==================== -->
+    <div class="overlay" id="productModal" aria-hidden="true" role="dialog" aria-label="Product details">
+      <div class="overlay-backdrop" data-close="modal"></div>
+      <div class="product-modal">
+        <button class="modal-close-btn" data-close="modal" aria-label="Close">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+
+        <div class="pm-visual" id="pmVisual">
+          <div class="pm-glow" id="pmGlow"></div>
+          <div class="pm-orb" id="pmOrb"></div>
+        </div>
+
+        <div class="pm-info">
+          <div class="pm-top-row">
+            <span class="pm-category" id="pmCategory"></span>
+            <span class="pm-stock" id="pmStock"></span>
+          </div>
+          <h2 class="pm-title" id="pmTitle"></h2>
+          <div class="pm-rating" id="pmRating"></div>
+          <p class="pm-desc" id="pmDesc"></p>
+
+          <div class="pm-price-row">
+            <div class="pm-price">KSh <span id="pmPrice"></span></div>
+          </div>
+
+          <div class="pm-qty-row">
+            <div class="qty-control">
+              <button class="qty-btn" id="qtyMinus" aria-label="Decrease">−</button>
+              <span class="qty-display" id="qtyDisplay">1</span>
+              <button class="qty-btn" id="qtyPlus" aria-label="Increase">+</button>
+            </div>
+            <div class="pm-line-total">
+              Total: KSh <span id="pmLineTotal">0</span>
+            </div>
+          </div>
+
+          <div class="pm-actions">
+            <button class="btn-primary" id="pmAddCart">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+              Add to Cart
+            </button>
+            <button class="btn-whatsapp" id="pmBuyNow">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.117.549 4.107 1.51 5.845L.057 23.485a.5.5 0 0 0 .6.6l5.64-1.453A11.944 11.944 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.885 0-3.65-.52-5.158-1.424l-.36-.215-3.735.962.982-3.732-.234-.375A9.96 9.96 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+              Buy via WhatsApp
+            </button>
+          </div>
+
+          <div class="pm-details">
+            <div class="pm-detail"><span>Shipping</span><span>24–48h · Nairobi</span></div>
+            <div class="pm-detail"><span>Packaging</span><span>Premium gift box</span></div>
+            <div class="pm-detail"><span>Returns</span><span>7 days (unused)</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== Cart Drawer ==================== -->
+    <div class="cart-overlay" id="cartDrawer" aria-hidden="true" aria-label="Shopping cart">
+      <div class="cart-backdrop" data-close="cart"></div>
+      <aside class="cart-panel">
+
+        <div class="cart-header">
+          <h3 class="cart-title">Your Cart</h3>
+          <button class="icon-btn" data-close="cart" aria-label="Close cart">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          </button>
+        </div>
+
+        <div class="cart-items" id="cartItems"></div>
+
+        <div class="cart-footer" id="cartFooter">
+          <div class="cart-totals">
+            <div class="cart-total-row">
+              <span>Subtotal</span>
+              <span class="cart-subtotal-val">KSh <span id="cartSubtotal">0</span></span>
+            </div>
+            <div class="cart-total-row muted">
+              <span>Delivery</span>
+              <span>Confirmed on WhatsApp</span>
+            </div>
+          </div>
+          <button class="btn-primary full-w" id="checkoutBtn">
+            Checkout via WhatsApp
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="margin-left:6px"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.117.549 4.107 1.51 5.845L.057 23.485a.5.5 0 0 0 .6.6l5.64-1.453A11.944 11.944 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.885 0-3.65-.52-5.158-1.424l-.36-.215-3.735.962.982-3.732-.234-.375A9.96 9.96 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+          </button>
+          <button class="btn-ghost full-w" id="clearCartBtn">Clear Cart</button>
+        </div>
+
+      </aside>
+    </div>
+
+    <!-- ==================== Newsletter Modal ==================== -->
+    <div class="overlay" id="newsletterModal" aria-hidden="true" role="dialog" aria-label="VIP Newsletter">
+      <div class="overlay-backdrop" data-close="newsletter"></div>
+      <div class="newsletter-modal">
+        <button class="modal-close-btn" data-close="newsletter" aria-label="Close">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+        <div class="nl-badge">✦ VIP Access</div>
+        <h3 class="nl-title">Join the Allure List</h3>
+        <p class="nl-sub">First access to new drops, exclusive offers and behind-the-scenes previews.</p>
+        <form id="newsletterForm" class="nl-form" novalidate>
+          <input type="email" name="email" class="form-input" placeholder="your@email.com" required />
+          <button class="btn-primary full-w" type="submit">Get Early Access</button>
+        </form          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Floating WhatsApp Help Button -->
+    <a class="wa-float" href="https://wa.me/254720220163?text=Hello%20MANUQATO%20ALLURE!%20I%20need%20some%20help." target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+      <svg class="wa-float-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+        <path d="M12 0C5.373 0 0 5.373 0 12c0 2.117.549 4.107 1.51 5.845L.057 23.485a.5.5 0 0 0 .6.6l5.64-1.453A11.944 11.944 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.885 0-3.65-.52-5.158-1.424l-.36-.215-3.735.962.982-3.732-.234-.375A9.96 9.96 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/>
+      </svg>
+      <span class="wa-float-label">Need Help?</span>
+    </a>
+
+    <script src="app.js"></script>
+  </body>
+</html>
